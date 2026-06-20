@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상속세 | 에덴택스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-area">
+      <div class="logo-mark">Eden Tax</div>
+      <div class="logo-text">
+        <strong>에덴택스</strong>
+        <span></span>
+      </div>
+    </a>
+
+    <nav class="top-nav">
+      <a href="index.html">메인</a>
+      <a href="about.html">에덴택스소개</a>
+      <a href="corporate-tax.html">세금</a>
+      <a href="services.html">업무영역</a>
+      <a href="location.html">오시는 길</a>
+    </nav>
+  </div>
+</header>
+
+<div class="site-wrap">
+  <div class="sub-banner">
+    <div class="sub-banner-text">
+      <p>당신의 든든한 세무동반자,</p>
+      <strong>에덴택스</strong>
+    </div>
+  </div>
+
+  <main class="content-layout">
+    <aside class="side-menu">
+      <div class="side-title">세금</div>
+      <a href="corporate-tax.html">법인세</a>
+      <a href="income-tax.html">종합소득세</a>
+      <a href="capital-gains-tax.html">양도소득세</a>
+      <a href="inheritance-tax.html" class="active">상속세</a>
+      <a href="gift-tax.html">증여세</a>
+    </aside>
+
+    <section class="page-content">
+      <h1>상속세</h1>
+
+      <h2>01 상속세의 개요</h2>
+      <p>
+        상속세는 유산을 취득한 상속인 또는 수유자에게 부과되는 세금입니다.
+        상속세는 상속인이 피상속인의 사망으로 인하여 재산을 무상으로 취득하는 경우
+        재산의 취득가액에 대하여 과세하는 세금입니다.
+      </p>
+
+      <h2>02 상속세의 납부</h2>
+      <p>
+        상속세는 피상속인의 유산총액을 기준으로 과세하고 있으며,
+        각 상속인은 각자가 받았거나 받을 재산&#40;보험금이나 또는 법정비율&#41;을 한도로 하여
+        상속인이 연대하여 상속세를 납부하여야 합니다.
+        다만, 상속인 1인이 상속으로 인하여 분할받은 재산의 한도를 초과하여 상속세를 부담하는 경우
+        다른 상속인에게 증여한 것으로 보게 됩니다.
+      </p>
+
+      <h2>03 상속세의 신고</h2>
+      <p>
+        상속세는 상속개시일&#40;사망일 또는 실종선고일&#41;이 속하는 달의 말일부터 6월 이내에
+        상속세 신고서를 피상속인의 주소지 관할 세무서에 제출하여야 합니다.
+        다만, 피상속인 또는 상속인 전원이 비거주자인 경우 9월 이내에 신고하시면 됩니다.
+        또한, 피상속인의 주소지가 국외인 경우 국내의 주된 재산 소재지 관할 세무서에 신고합니다.
+        신고기한내에 상속세를 신고하시면 10%를 신고세액공제 받을 수 있습니다.
+      </p>
+
+      <h2>04 상속세 신고시 제출할 서류</h2>
+      <p>
+        - 상속세 과세표준신고 및 자진납부계산서<br>
+        - 상속세산출세액 및 그 공제명세서<br>
+        - 공과금, 장례비, 채무사실을 입증할 수 있는 서류<br>
+        - 피상속인 및 상속인의 가족관계증명서<br>
+        - 상속재산을 감정평가한 경우 감정평가수수료 지급서류<br>
+        - 상속재산을 분할한 경우 상속재산분할명세서 및 그 평가명세서<br>
+        - 가업상속공제신고서 등 기타 서류
+      </p>
+
+      <h2>05 상속세 세액계산 흐름도</h2>
+
+      <div class="tax-calc-box">
+        <p>총 상속재산가액</p>
+        <p>ㆍ본래의 상속재산</p>
+        <p>ㆍ간주상속재산&#40;보험금, 신탁재산, 퇴직금 등&#41;</p>
+        <p>ㆍ추정상속재산&#40;사망 전 1년 내 2억, 2년 내 5억 이상으로 용도불분명&#41;</p>
+        <p>ㆍ처분재산, 채무부담액</p>
+
+        <p class="calc-line">&#40;-&#41; 과세제외 재산</p>
+        <p>ㆍ비과세 재산&#40;금양임야, 문화재 등&#41;</p>
+        <p>ㆍ과세가액 불산입재산&#40;공익법인 출연재산 등&#41;</p>
+
+        <p class="calc-line">상속재산가액</p>
+        <p>&#40;-&#41; 공과금</p>
+        <p>&#40;-&#41; 장례비</p>
+        <p>&#40;-&#41; 채무</p>
+        <p>&#40;+&#41; 합산대상 사전증여재산&#40;상속인 10년, 상속인 외의 자 5년&#41;</p>
+
+        <p class="calc-line">상속세 과세가액</p>
+        <p>&#40;-&#41; 상속공제</p>
+        <p>ㆍMAX&#40;기초공제 + 기타 인적공제, 일괄공제 5억&#41;</p>
+        <p>ㆍ배우자공제 MAX&#40;5억, 법정지분액, 실제상속금액&#41;</p>
+        <p>ㆍ금융재산공제</p>
+        <p>ㆍ동거주택 상속공제 MAX&#40;주택가액의 40%, 5억&#41;</p>
+        <p>&#40;-&#41; 감정평가 수수료</p>
+
+        <p class="calc-line">상속세 과세표준</p>
+        <p>&#40;X&#41; 세율</p>
+        <p>ㆍ세율 10%부터 50%까지 누진세율</p>
+
+        <p class="calc-line">상속세 산출세액</p>
+        <p>&#40;-&#41; 기납부 세액공제</p>
+        <p>&#40;-&#41; 신고세액공제</p>
+        <p>&#40;+&#41; 신고불성실 등 가산세</p>
+
+        <p class="calc-line">상속세 결정세액</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="footer-logos">
+    <a href="https://www.4insure.or.kr" target="_blank">4대사회보험 정보연계센터</a>
+    <span>·</span>
+    <a href="https://www.nts.go.kr" target="_blank">국세청</a>
+    <span>·</span>
+    <a href="https://www.law.go.kr" target="_blank">국가법령정보센터</a>
+    <span>·</span>
+    <a href="https://www.moel.go.kr" target="_blank">고용노동부</a>
+    <span>·</span>
+    <a href="https://www.moleg.go.kr" target="_blank">법제처</a>
+    <span>·</span>
+    <a href="https://www.kacpta.or.kr" target="_blank">한국세무사회</a>
+  </div>
+
+  <div class="footer-info">
+    오시는 길 : 서울 강남구 테헤란로 151 1202호<br>
+    팩스 : 0504-338-1208<br>
+    이메일 : admin@edentax.kr<br>
+    © 에덴택스
+  </div>
+</footer>
+
+</body>
+</html>
