@@ -303,7 +303,7 @@ ol, ul { padding: 0; list-style: none; }
 .process p { margin-top: 6px !important; color: var(--text-sub); font-size: 15.5px; }
 
 /* ---------- 칼럼 ---------- */
-.columns { background: linear-gradient(180deg, var(--bg), #fff); }
+.columns { background: linear-gradient(180deg, #fff, var(--bg)); }
 .col-grid { display: grid; grid-template-columns: 1fr 340px; gap: 24px; align-items: start; }
 .col-list { display: grid; gap: 20px; }
 .col-card {

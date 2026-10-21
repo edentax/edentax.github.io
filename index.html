@@ -13,7 +13,7 @@
   <meta name="theme-color" content="#0F1B33">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="/assets/site.css?v=20261021c">
+  <link rel="stylesheet" href="/assets/site.css?v=20261021d">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"AccountingService","name":"에덴택스","url":"https://www.edentax.kr/","telephone":"+82-10-4892-0921","email":"admin@edentax.kr","faxNumber":"0504-338-1208","address":{"@type":"PostalAddress","streetAddress":"테헤란로 151, 1202호","addressLocality":"강남구","addressRegion":"서울특별시","addressCountry":"KR"},"areaServed":"KR","knowsAbout":["양도소득세","상속세","증여세","종합소득세","법인세"]}</script>
 </head>
 <body data-nav="home">
@@ -116,7 +116,7 @@
 
       <div class="hero-visual" data-anim="fade" data-delay="2">
         <div class="ring ring-1" aria-hidden="true"></div>
-        <div class="hero-frame"><img src="/images/person.webp?v=20261021c" alt="에덴택스 정재욱 세무사" width="820" height="1073"></div>
+        <div class="hero-frame"><img src="/images/person.webp?v=20261021d" alt="에덴택스 정재욱 세무사" width="820" height="1073"></div>
         <div class="chip chip-1"><span class="chip-ic"><svg class="ic"><use href="#i-landmark"/></svg></span><div><small>전원</small><strong>국세청 출신 세무사</strong></div></div>
         <div class="chip chip-2"><span class="chip-ic"><svg class="ic"><use href="#i-house"/></svg></span><div><small>재산세 전문</small><strong>양도 · 상속 · 증여</strong></div></div>
         <div class="chip chip-3"><span class="chip-ic"><svg class="ic"><use href="#i-map-pin"/></svg></span><div><small>찾아오시는 길</small><strong>역삼역 5번 출구 인근</strong></div></div>
@@ -141,7 +141,45 @@
     </div>
   </section>
 
-  <!-- 3. 업무 분야 -->
+  <!-- 3. 칼럼: 첫 화면 바로 아래 (scripts/build_site.py가 COLUMNS 표시 사이를 자동으로 갱신) -->
+  <section class="sec columns" id="columns">
+    <div class="wrap">
+      <div class="sec-head sec-head-row" data-anim="up">
+        <div>
+          <p class="kicker">TAX COLUMN</p>
+          <h2>에덴택스 세금 칼럼</h2>
+          <p class="sec-desc">최근 부동산 이슈를 양도·상속·증여 세금으로 풀어 드립니다.</p>
+        </div>
+        <a class="link-more" href="column/">칼럼 전체 보기<svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="col-grid">
+        <div class="col-list">
+<!-- COLUMNS:START -->
+<a class="col-card col-lead" href="/column/temporary-two-houses-2-years/" data-anim="up" data-cat="양도소득세">
+  <div class="col-thumb"><img src="/column/temporary-two-houses-2-years/thumb.webp" alt="조정대상지역 갈아타기, 종전 집 처분기한 2년? 3년? (2026.10.1 시행)" loading="lazy" width="640" height="640"></div>
+  <div class="col-body">
+    <span class="col-cat">양도소득세</span>
+    <h3>조정대상지역 갈아타기, 종전 집 처분기한 2년? 3년? (2026.10.1 시행)</h3>
+    <p>2026년 10월 1일부터 조정대상지역 내 일시적 2주택 처분기한이 2년으로 줄었습니다. 8월 3일·8월 26일 기준일, 경우별 예시, 현재 조정대상지역까지 정리했습니다.</p>
+    <div class="col-foot"><time datetime="2026-10-21">2026.10.21</time><span class="go">읽어 보기<svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></span></div>
+  </div>
+</a>
+<!-- COLUMNS:END -->
+        </div>
+        <aside class="col-side" data-anim="up" data-delay="1">
+          <p class="col-side-title">칼럼 바로가기</p>
+          <a class="col-side-link" href="column/"><svg class="ic"><use href="#i-book-open"/></svg><span><strong>칼럼 목록</strong><small>지금까지 쓴 칼럼 모두 보기</small></span><svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></a>
+          <a class="col-side-link" href="https://blog.naver.com/edentax_" target="_blank" rel="noopener"><svg class="ic"><use href="#i-file-text"/></svg><span><strong>네이버 블로그</strong><small>blog.naver.com/edentax_</small></span><svg class="ic ic-sm"><use href="#i-external"/></svg></a>
+          <div class="col-side-cta">
+            <p>칼럼 내용이 내 상황에도 해당되는지 궁금하다면</p>
+            <a href="tel:01048920921"><svg class="ic"><use href="#i-phone"/></svg>010-4892-0921</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 업무 분야 -->
   <section class="sec services" id="services">
     <div class="wrap">
       <div class="sec-head" data-anim="up">
@@ -196,12 +234,12 @@
     </div>
   </section>
 
-  <!-- 4. 대표 세무사 · 일하는 방식 -->
+  <!-- 5. 대표 세무사 · 일하는 방식 -->
   <section class="sec profile" id="profile">
     <div class="wrap profile-grid">
       <div class="profile-photo" data-anim="left">
         <div class="photo-frame">
-          <img src="images/person.webp?v=20261021c" alt="정재욱 세무사" loading="lazy" width="820" height="1073">
+          <img src="images/person.webp?v=20261021d" alt="정재욱 세무사" loading="lazy" width="820" height="1073">
         </div>
         <div class="photo-badge"><svg class="ic"><use href="#i-badge-check"/></svg>국세청 출신 세무사</div>
       </div>
@@ -229,44 +267,6 @@
         <li data-anim="up" data-delay="2"><span class="step">STEP 03</span><svg class="ic"><use href="#i-calculator"/></svg><strong>세액 비교</strong><p>가능한 방법별로 세금을 계산해 비교합니다.</p></li>
         <li data-anim="up" data-delay="3"><span class="step">STEP 04</span><svg class="ic"><use href="#i-file-check"/></svg><strong>신고 · 사후 관리</strong><p>신고 후 소명 요청과 조사까지 대응합니다.</p></li>
       </ol>
-    </div>
-  </section>
-
-  <!-- 5. 칼럼 (scripts/build_site.py가 COLUMNS 표시 사이를 자동으로 갱신) -->
-  <section class="sec columns" id="columns">
-    <div class="wrap">
-      <div class="sec-head sec-head-row" data-anim="up">
-        <div>
-          <p class="kicker">TAX COLUMN</p>
-          <h2>에덴택스 세금 칼럼</h2>
-          <p class="sec-desc">최근 부동산 이슈를 양도·상속·증여 세금으로 풀어 드립니다.</p>
-        </div>
-        <a class="link-more" href="column/">칼럼 전체 보기<svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></a>
-      </div>
-      <div class="col-grid">
-        <div class="col-list">
-<!-- COLUMNS:START -->
-<a class="col-card col-lead" href="/column/temporary-two-houses-2-years/" data-anim="up" data-cat="양도소득세">
-  <div class="col-thumb"><img src="/column/temporary-two-houses-2-years/thumb.webp" alt="조정대상지역 갈아타기, 종전 집 처분기한 2년? 3년? (2026.10.1 시행)" loading="lazy" width="640" height="640"></div>
-  <div class="col-body">
-    <span class="col-cat">양도소득세</span>
-    <h3>조정대상지역 갈아타기, 종전 집 처분기한 2년? 3년? (2026.10.1 시행)</h3>
-    <p>2026년 10월 1일부터 조정대상지역 내 일시적 2주택 처분기한이 2년으로 줄었습니다. 8월 3일·8월 26일 기준일, 경우별 예시, 현재 조정대상지역까지 정리했습니다.</p>
-    <div class="col-foot"><time datetime="2026-10-21">2026.10.21</time><span class="go">읽어 보기<svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></span></div>
-  </div>
-</a>
-<!-- COLUMNS:END -->
-        </div>
-        <aside class="col-side" data-anim="up" data-delay="1">
-          <p class="col-side-title">칼럼 바로가기</p>
-          <a class="col-side-link" href="column/"><svg class="ic"><use href="#i-book-open"/></svg><span><strong>칼럼 목록</strong><small>지금까지 쓴 칼럼 모두 보기</small></span><svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></a>
-          <a class="col-side-link" href="https://blog.naver.com/edentax_" target="_blank" rel="noopener"><svg class="ic"><use href="#i-file-text"/></svg><span><strong>네이버 블로그</strong><small>blog.naver.com/edentax_</small></span><svg class="ic ic-sm"><use href="#i-external"/></svg></a>
-          <div class="col-side-cta">
-            <p>칼럼 내용이 내 상황에도 해당되는지 궁금하다면</p>
-            <a href="tel:01048920921"><svg class="ic"><use href="#i-phone"/></svg>010-4892-0921</a>
-          </div>
-        </aside>
-      </div>
     </div>
   </section>
 
@@ -369,7 +369,7 @@
   <button type="button" class="q-top" id="toTop" aria-label="맨 위로"><svg class="ic"><use href="#i-arrow-up"/></svg></button>
 </div>
 
-<script src="/assets/site.js?v=20261021c" defer></script>
+<script src="/assets/site.js?v=20261021d" defer></script>
 <!-- /LAYOUT:FOOTER -->
 </body>
 </html>
