@@ -149,7 +149,7 @@ ol, ul { padding: 0; list-style: none; }
   display: grid; grid-template-columns: 1.08fr .92fr; align-items: end; gap: 40px;
   padding-top: 120px;
 }
-.hero-copy { align-self: center; padding-bottom: 60px; }
+.hero-copy { align-self: center; padding-bottom: 60px; min-width: 0; }
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
   padding: 8px 16px; border-radius: 999px;
@@ -175,6 +175,18 @@ ol, ul { padding: 0; list-style: none; }
 .rotator b.is-out { opacity: 0; transform: translateY(-60%); transition-duration: .3s; }
 .hero-sub { margin-top: 26px; font-size: 18px; color: rgba(225, 235, 255, .78); line-height: 1.75; }
 .hero-cta { margin-top: 38px; display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-news {
+  margin-top: 26px; display: inline-flex; align-items: center; gap: 12px; max-width: 100%;
+  padding: 7px 16px 7px 7px; border-radius: 999px;
+  background: rgba(255, 255, 255, .06); border: 1px solid rgba(127, 178, 255, .25);
+  color: #e1ebff; font-size: 15.5px; transition: background .25s, border-color .25s;
+}
+.hero-news:hover { background: rgba(127, 178, 255, .14); border-color: rgba(127, 178, 255, .5); }
+.hero-news-tag { flex: none; padding: 5px 12px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 12.5px; font-weight: 800; }
+.hero-news-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.hero-news-date { flex: none; font-size: 13.5px; font-weight: 500; color: rgba(225, 235, 255, .55); }
+.hero-news .ic { flex: none; color: var(--sky); transition: transform .25s; }
+.hero-news:hover .ic { transform: translateX(3px); }
 
 .hero-visual { position: relative; align-self: center; display: flex; justify-content: center; padding: 10px 0 70px; }
 .ring { position: absolute; left: 50%; top: 46%; border-radius: 50%; border: 1px dashed rgba(127, 178, 255, .35); transform: translate(-50%, -50%); }
@@ -748,6 +760,9 @@ ol, ul { padding: 0; list-style: none; }
   .hero-title { font-size: 34px; margin-top: 20px; }
   .hero-sub { font-size: 16px; margin-top: 18px; }
   .hero-cta { margin-top: 26px; }
+  .hero-news { margin-top: 20px; font-size: 14px; gap: 10px; }
+  .hero-news-date { font-size: 12.5px; }
+  .hero-news-date .y { display: none; }
   .btn { height: 54px; font-size: 16px; padding: 0 22px; width: 100%; justify-content: center; }
   .hero-visual { padding: 24px 0 48px; }
   .hero-frame { width: 78%; border-radius: 26px; }
