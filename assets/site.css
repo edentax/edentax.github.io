@@ -957,3 +957,47 @@ ol, ul { padding: 0; list-style: none; }
   .ck-docs, .ck-btns, .ck-cards { grid-template-columns: 1fr; }
 }
 .ck-side .btn { font-size: 15px; padding: 0 14px; white-space: nowrap; }
+
+/* 상단 메뉴 '상담 체크리스트' 강조 */
+.gnb-menu > a.gnb-check { gap: 6px; color: #7fe0ff; font-weight: 800; }
+.gnb.is-scrolled .gnb-menu > a.gnb-check { color: var(--blue); }
+/* 체크리스트 옆 카드: 국세청 출신 띠 */
+.ck-side-badge { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 10px; border-radius: 12px; background: var(--blue); color: #fff; font-size: 15px; font-weight: 800; }
+
+/* 메인 첫 화면 아래 체크리스트 버튼 줄 */
+.hck { padding: 70px 0 80px; background: radial-gradient(120% 120% at 85% 0%, #1d3a6e 0%, var(--navy-800) 55%, var(--navy-900) 100%); color: #fff; }
+.hck-head { text-align: center; }
+.hck-badge { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border-radius: 999px; background: var(--blue); font-size: 16px; font-weight: 800; box-shadow: 0 0 0 4px rgba(79, 209, 255, .25); }
+.hck-head h2 { margin-top: 18px !important; font-size: clamp(28px, 3.2vw, 40px); font-weight: 800; letter-spacing: -0.04em; }
+.hck-head p:last-child { margin-top: 10px !important; font-size: 17px; color: rgba(225, 235, 255, .78); }
+.hck-tiles { margin-top: 40px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.hck-tile { position: relative; display: flex; flex-direction: column; min-height: 210px; padding: 20px; border-radius: 18px; background: #fff; color: var(--text);
+  box-shadow: 0 0 0 3px rgba(79, 209, 255, .3), 0 20px 40px -18px rgba(0, 0, 0, .7); transition: transform .3s var(--ease); }
+.hck-tile:hover { transform: translateY(-6px); }
+.hck-no { font-size: 12px; font-weight: 800; letter-spacing: .14em; color: var(--blue); }
+.hck-ic { position: absolute; right: 16px; top: 16px; width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; background: linear-gradient(140deg, #3f86ff, var(--blue)); color: #fff; }
+.hck-tile strong { margin-top: 34px; font-size: 24px; font-weight: 800; letter-spacing: -0.04em; }
+.hck-tile em { align-self: flex-start; margin-top: 6px; padding: 2px 9px; border-radius: 7px; background: #e6efff; color: var(--blue); font-style: normal; font-size: 14px; font-weight: 800; }
+.hck-go { margin-top: auto; display: flex; align-items: center; justify-content: center; gap: 6px; height: 44px; border-radius: 11px; background: var(--blue); color: #fff; font-size: 15px; font-weight: 800; }
+@media (max-width: 1180px) { .gnb-menu > a.gnb-check .ic { display: none; } }
+@media (max-width: 980px) { .hck-tiles { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) {
+  .hck { padding: 50px 0 56px; }
+  .hck-tiles { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .hck-tile { min-height: 170px; padding: 16px; }
+  .hck-tile strong { margin-top: 30px; font-size: 20px; }
+  .hck-ic { width: 38px; height: 38px; right: 12px; top: 12px; }
+  .hck-go { height: 38px; font-size: 13.5px; }
+  .hck-badge { font-size: 14px; }
+}
+/* 메인 사진 아래 '국세청 출신 세무사' 띠 */
+.hero-badge { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 10px; height: 62px;
+  background: linear-gradient(90deg, var(--blue), #3f86ff); color: #fff; font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+.hero-badge .ic { width: 24px; height: 24px; }
+.hck-tile small { margin-top: 6px; margin-bottom: 14px; font-size: 14px; color: var(--text-sub); font-weight: 600; }
+@media (max-width: 640px) { .hero-badge { height: 46px; font-size: 17px; } .hck-tile small { font-size: 12.5px; } }
+@media (max-width: 640px) {
+  .hero-visual .chip-3 { display: none; }
+  .hck-tile:last-child { grid-column: 1 / -1; }
+}
+.cta-check { margin-top: 26px; }

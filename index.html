@@ -76,6 +76,7 @@
         </div>
       </div>
       <a href="/services.html" data-nav="services">업무영역</a>
+      <a href="/check/" data-nav="check" class="gnb-check"><svg class="ic ic-sm"><use href="#i-list-checks"/></svg>상담 체크리스트</a>
       <a href="/column/" data-nav="column">칼럼</a>
       <a href="/location.html" data-nav="location">오시는 길</a>
       <a class="gnb-call" href="tel:01048920921"><svg class="ic"><use href="#i-phone"/></svg>010-4892-0921</a>
@@ -124,7 +125,7 @@
 
       <div class="hero-visual" data-anim="fade" data-delay="2">
         <div class="ring ring-1" aria-hidden="true"></div>
-        <div class="hero-frame"><img src="/images/person.webp?v=20261022a" alt="에덴택스 정재욱 세무사" width="820" height="1073"></div>
+        <div class="hero-frame"><img src="/images/person.webp?v=20261022a" alt="에덴택스 정재욱 세무사" width="820" height="1073"><p class="hero-badge"><svg class="ic"><use href="#i-landmark"/></svg>국세청 출신 세무사</p></div>
         <div class="chip chip-1"><span class="chip-ic"><svg class="ic"><use href="#i-landmark"/></svg></span><div><small>전원</small><strong>국세청 출신 세무사</strong></div></div>
         <div class="chip chip-2"><span class="chip-ic"><svg class="ic"><use href="#i-house"/></svg></span><div><small>전문 분야</small><strong>양도 · 상속 · 증여 · 부동산</strong></div></div>
         <div class="chip chip-3"><span class="chip-ic"><svg class="ic"><use href="#i-map-pin"/></svg></span><div><small>찾아오시는 길</small><strong>역삼역 5번 출구</strong></div></div>
@@ -148,6 +149,51 @@
       <div class="trust-item" data-anim="up" data-delay="3"><svg class="ic"><use href="#i-map-pin"/></svg><div><strong>역삼역 5번 출구</strong><span>테헤란로 151, 1202호</span></div></div>
     </div>
   </section>
+
+  <!-- 2-1. 상담 체크리스트 버튼 (scripts/build_site.py가 CHECKS 표시 사이를 자동으로 갱신, 원본 brand/checklists.json) -->
+<!-- CHECKS:START -->
+  <section class="hck" id="checklist">
+    <div class="wrap">
+      <div class="hck-head" data-anim="up">
+        <p class="hck-badge"><svg class="ic ic-sm"><use href="#i-landmark"/></svg>국세청 출신 세무사가 직접 상담합니다</p>
+        <h2>어떤 세금 상담이 필요하세요?</h2>
+        <p>분야를 누르면 STEP 1·2·3 체크리스트로 내 상황과 기한을 확인하고 바로 연락할 수 있습니다.</p>
+      </div>
+      <div class="hck-tiles">
+        <a class="hck-tile" href="/check/inheritance/" data-anim="up" data-delay="0">
+          <span class="hck-no">CHECK 01</span><span class="hck-ic"><svg class="ic"><use href="#i-users"/></svg></span>
+          <strong>상속 상담</strong>
+          <small>상속세·상속포기 기한</small>
+          <span class="hck-go">체크리스트 확인 <svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></span>
+        </a>
+        <a class="hck-tile" href="/check/gift/" data-anim="up" data-delay="1">
+          <span class="hck-no">CHECK 02</span><span class="hck-ic"><svg class="ic"><use href="#i-gift"/></svg></span>
+          <strong>증여 상담</strong>
+          <small>증여세·혼인 공제</small>
+          <span class="hck-go">체크리스트 확인 <svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></span>
+        </a>
+        <a class="hck-tile" href="/check/capital-gains/" data-anim="up" data-delay="2">
+          <span class="hck-no">CHECK 03</span><span class="hck-ic"><svg class="ic"><use href="#i-house"/></svg></span>
+          <strong>양도 상담</strong>
+          <small>비과세·일시적 2주택</small>
+          <span class="hck-go">체크리스트 확인 <svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></span>
+        </a>
+        <a class="hck-tile" href="/check/funding-plan/" data-anim="up" data-delay="3">
+          <span class="hck-no">CHECK 04</span><span class="hck-ic"><svg class="ic"><use href="#i-file-check"/></svg></span>
+          <strong>부동산 상담</strong><em>자금조달</em>
+          <small>계획서 작성·증여 신고</small>
+          <span class="hck-go">체크리스트 확인 <svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></span>
+        </a>
+        <a class="hck-tile" href="/check/real-estate/" data-anim="up" data-delay="4">
+          <span class="hck-no">CHECK 05</span><span class="hck-ic"><svg class="ic"><use href="#i-building-2"/></svg></span>
+          <strong>부동산 상담</strong><em>일반</em>
+          <small>취득·보유·임대</small>
+          <span class="hck-go">체크리스트 확인 <svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+<!-- CHECKS:END -->
 
   <!-- 3. 칼럼: 첫 화면 바로 아래 (scripts/build_site.py가 COLUMNS 표시 사이를 자동으로 갱신) -->
   <section class="sec columns" id="columns">
@@ -323,6 +369,7 @@
       <p class="kicker kicker-light">CONTACT</p>
       <h2>세금 결정 전에,<br>먼저 물어보세요.</h2>
       <p>계약서에 도장 찍기 전, 증여하기 전, 신고기한이 다가오기 전. <br class="pc">상황을 알려 주시면 확인할 사항부터 정리해 드립니다.</p>
+      <a class="btn btn-ghost cta-check" href="/check/"><svg class="ic"><use href="#i-list-checks"/></svg>상담 체크리스트로 먼저 확인하기</a>
     </div>
     <div class="cta-cards">
       <a class="cta-card" href="tel:01048920921" data-anim="up" data-delay="1"><span class="cta-ic"><svg class="ic"><use href="#i-phone"/></svg></span><span class="cta-txt"><small>전화 상담</small><strong>010-4892-0921</strong></span></a>
@@ -397,7 +444,7 @@
         <p>전화 010-4892-0921 · 팩스 0504-338-1208 · 이메일 admin@edentax.kr · 카카오톡 edentax</p>
       </div>
       <nav class="f-menu" aria-label="사이트 메뉴">
-        <a href="/about.html">에덴택스 소개</a><a href="/services.html">업무영역</a><a href="/column/">칼럼</a><a href="/location.html">오시는 길</a>
+        <a href="/about.html">에덴택스 소개</a><a href="/services.html">업무영역</a><a href="/check/">상담 체크리스트</a><a href="/column/">칼럼</a><a href="/location.html">오시는 길</a>
         <a href="/capital-gains-tax.html">양도소득세</a><a href="/inheritance-tax.html">상속세</a><a href="/gift-tax.html">증여세</a><a href="/income-tax.html">종합소득세</a><a href="/corporate-tax.html">법인세</a>
       </nav>
     </div>
