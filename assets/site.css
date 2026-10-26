@@ -1025,6 +1025,11 @@ ol, ul { padding: 0; list-style: none; }
 .adv-fields small { display: block; font-size: 13px; font-weight: 700; color: #8fa3c4; letter-spacing: .04em; }
 .adv-fields p { margin-top: 9px !important; font-size: 16px; font-weight: 600; color: #cfdcf2; }
 .adv-fields i { font-style: normal; margin: 0 8px; color: rgba(217, 182, 112, .7); }
+/* 문화센터 강사 이력: 패널 아래 여백에 한 줄 (요란하지 않게) */
+.adv-col { position: relative; z-index: 2; width: min(440px, 100%); }
+.adv-col .adv { width: 100%; }
+.adv-lec { margin-top: 18px !important; display: flex; align-items: center; justify-content: flex-end; gap: 9px; font-size: 15px; font-weight: 700; color: #dfe8f7; letter-spacing: -0.01em; }
+.adv-lec .ic { width: 18px; height: 18px; color: #d9b670; flex: none; }
 @media (max-width: 980px) { .hero-adv { justify-content: flex-start; padding: 10px 0 60px; } }
 @media (max-width: 640px) {
   .hero-adv { padding: 0 0 44px; }
@@ -1034,4 +1039,5 @@ ol, ul { padding: 0; list-style: none; }
   .adv-list li { font-size: 16.5px; gap: 14px; }
   .adv-fields p { font-size: 14px; }
   .adv-fields i { margin: 0 5px; }
+  .adv-lec { justify-content: flex-start; font-size: 14px; margin-top: 14px !important; }
 }
