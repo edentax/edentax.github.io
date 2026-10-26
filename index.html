@@ -13,7 +13,7 @@
   <meta name="theme-color" content="#0F1B33">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="/assets/site.css?v=20261025c">
+  <link rel="stylesheet" href="/assets/site.css?v=20261026a">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"AccountingService","name":"에덴택스","url":"https://www.edentax.kr/","telephone":"+82-10-4892-0921","email":"admin@edentax.kr","faxNumber":"0504-338-1208","address":{"@type":"PostalAddress","streetAddress":"테헤란로 151, 1202호","addressLocality":"강남구","addressRegion":"서울특별시","addressCountry":"KR"},"areaServed":"KR","knowsAbout":["양도소득세","상속세","증여세","부동산 세무","종합소득세","법인세"]}</script>
 </head>
 <body data-nav="home">
@@ -99,16 +99,13 @@
 
     <div class="hero-inner">
       <div class="hero-copy">
-        <p class="hero-eyebrow" data-anim="up"><span class="dot"></span>국세청 출신 세무사 · 양도·상속·증여·부동산 전문</p>
+        <p class="hero-eyebrow" data-anim="up"><span class="dot"></span>국세청 출신 세무사</p>
         <h1 class="hero-title">
           <span class="line"><span>국세청에서 본 기준으로</span></span>
           <span class="line"><span><em class="rotator" aria-live="polite"><b class="is-on">양도소득세</b><b>상속세</b><b>증여세</b><b>부동산 세무</b></em>를</span></span>
           <span class="line"><span>끝까지 함께 봅니다.</span></span>
         </h1>
-        <p class="hero-sub" data-anim="up" data-delay="3">
-          양도·상속·증여 세금부터 청약·재건축·입지 분석까지, 부동산의 모든 순간을 함께 봅니다.<br class="pc">
-          신고대리·기장·경정청구·조세불복도 처음 상담부터 신고 후 관리까지 함께합니다.
-        </p>
+        <!-- 2026-10-26 세무사님: 왼쪽이 꽉 차 보여 소개 문장(hero-sub)은 빼고 전문 분야는 오른쪽 패널로 옮김 -->
         <div class="hero-cta" data-anim="up" data-delay="4">
           <a class="btn btn-primary" href="tel:01048920921"><svg class="ic"><use href="#i-phone"/></svg>전화 상담 010-4892-0921</a>
           <a class="btn btn-ghost" href="http://pf.kakao.com/_GXuln" target="_blank" rel="noopener"><svg class="ic"><use href="#i-message-circle"/></svg>카카오톡 상담</a>
@@ -123,19 +120,25 @@
 <!-- HERONEWS:END -->
       </div>
 
-      <!-- 2026-10-25 세무사님: 첫 화면은 사진 없는 버전(번잡함). 사진 버전은 아래 HERO-PHOTO 주석 참고 -->
-      <div class="hero-profile" data-anim="fade" data-delay="2">
-        <p class="hp-badge"><svg class="ic"><use href="#i-landmark"/></svg>국세청 출신 세무사</p>
-        <p class="hp-name"><small>에덴택스 대표 세무사</small>정재욱 <span>세무사</span></p>
-        <dl class="hp-list">
-          <div><dt>학력</dt><dd>한국외국어대학교(서울) 영어학과 졸업</dd></div>
-          <div><dt>경력</dt><dd>前 대기업 해외영업팀 근무<br>前 국세청 근무 (7급 공채)</dd></div>
-          <div><dt>강의</dt><dd>현대백화점 · 신세계백화점 문화센터 강사</dd></div>
-          <div><dt>분야</dt><dd>양도 · 상속 · 증여 · 부동산 세금</dd></div>
-        </dl>
-        <a class="hp-more" href="/about.html">대표 세무사 소개 보기<svg class="ic ic-sm"><use href="#i-arrow-right"/></svg></a>
+      <!-- 2026-10-26 세무사님: 오른쪽은 사진·이름·이력 없이 고액자산가 상담 패널(남색+금색 선). '최고·1위' 같은 우월성 표현은 쓰지 않음(광고 규정). 사진 버전은 아래 HERO-PHOTO 주석 -->
+      <div class="hero-visual hero-adv" data-anim="fade" data-delay="2">
+        <div class="adv-glow" aria-hidden="true"></div>
+        <div class="adv">
+          <p class="adv-label">PRIVATE ADVISORY</p>
+          <p class="adv-title">고액자산가 세무 설계</p>
+          <span class="adv-line" aria-hidden="true"></span>
+          <ol class="adv-list">
+            <li><em>01</em>부동산 자산 관리</li>
+            <li><em>02</em>가족법인 설립</li>
+            <li><em>03</em>상속 · 증여 설계</li>
+          </ol>
+          <div class="adv-fields">
+            <small>전문 분야</small>
+            <p>양도<i>·</i>상속<i>·</i>증여<i>·</i>청약<i>·</i>재건축<i>·</i>입지분석</p>
+          </div>
+        </div>
       </div>
-<!-- HERO-PHOTO (사진 버전, 되돌릴 때 이 주석 안의 내용으로 hero-profile을 바꿈)
+<!-- HERO-PHOTO (사진 버전, 되돌릴 때 이 주석 안의 내용으로 위 hero-visual을 바꿈)
       <div class="hero-visual" data-anim="fade" data-delay="2">
         <div class="ring ring-1" aria-hidden="true"></div>
         <div class="hero-frame"><img src="/images/person.webp?v=20261022a" alt="에덴택스 정재욱 세무사" width="820" height="1073"><p class="hero-badge"><svg class="ic"><use href="#i-landmark"/></svg>국세청 출신 세무사</p></div>
@@ -477,7 +480,7 @@
   <button type="button" class="q-top" id="toTop" aria-label="맨 위로"><svg class="ic"><use href="#i-arrow-up"/></svg></button>
 </div>
 
-<script src="/assets/site.js?v=20261025c" defer></script>
+<script src="/assets/site.js?v=20261026a" defer></script>
 <!-- /LAYOUT:FOOTER -->
 </body>
 </html>
